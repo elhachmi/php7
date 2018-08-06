@@ -45,8 +45,6 @@ RUN chmod +x /bin/install-composer.sh && \
 
 RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
 
-RUN apt-get install ffmpeg
-
 WORKDIR /var/www
 
 CMD ["php-fpm"]
